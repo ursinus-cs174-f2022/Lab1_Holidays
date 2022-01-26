@@ -1,13 +1,13 @@
 CC=g++
 CFLAGS=-std=c++11 -g -Wall 
 
-all: weekday.o weekday
+all: holidays
 
 weekday.o: weekday.cpp weekday.h
 	$(CC) $(CFLAGS) -c weekday.cpp
 
-weekday: weekday.o
-	$(CC) $(CFLAGS) -o weekday weekday.o
+holidays: holidays.cpp weekday.o
+	$(CC) $(CFLAGS) -o holidays weekday.o holidays.cpp
 
 clean:
 	rm *.o *.exe *.stackdump holidays weekday

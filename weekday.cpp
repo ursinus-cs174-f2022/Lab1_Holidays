@@ -1,7 +1,7 @@
 /**
  * To compute the weekday for a particular day in the 
  * Gregorian Calendar using Conway's Doomsday algorithm
- * @author ctralie, 2020
+ * @author ctralie, 2022
  */
 
 #include <string>
@@ -9,9 +9,7 @@
 #include "weekday.h"
 using namespace std;
     
-string WEEKDAY_STRINGS[7] = 
-    {"Sunday", "Monday", "Tuesday", "Wednesday", 
-        "Thursday", "Friday", "Saturday"};
+const string WEEKDAY_STRINGS[7] =  {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
 /**
  * Compute the century anchor
@@ -87,8 +85,4 @@ string getWeekday(int year, int month, int day) {
         weekday += 7;
     }
     return WEEKDAY_STRINGS[weekday];    
-}
-
-int main() {
-    cout << "Our lab is on " << getWeekday(2022, 01, 26) << endl;
 }

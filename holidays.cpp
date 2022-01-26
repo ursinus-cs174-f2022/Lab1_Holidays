@@ -37,8 +37,9 @@ void printHTMLEnd() {
     cout << "</body>\n</html>";
 }
 
-// TODO: Create a method that prints a string corresponding to a 
-// particular row of the table
+void print
+// TODO: Create a method that takes in an index and prints a string 
+// corresponding the HTML code for that row of the table
 
 // TODO: Create a method that loops through all holidays and calls 
 // the above method, piecing everything together into a table

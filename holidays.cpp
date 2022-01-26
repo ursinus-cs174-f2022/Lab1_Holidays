@@ -11,14 +11,14 @@ const int HOLIDAY_YEARS[NUM_HOLIDAYS] = {2021,2021,2021,2021,2021,2021,2021,2021
 
 /**
  * Setup a string that's required at the beginning of the HTML document,
- * which includes the title "Holidays"
+ * which includes the title "2021/2022 Holidays"
  * @return String at the end of the HTML document
  */
 void printHTMLStart() {
     cout << "<html>\n";
     cout << "<head>\n";
     cout << "    <meta charset=utf-8></meta>\n";
-    cout << "    <title>2021/2022 Holiday & Observance Calendar</title>\n";
+    cout << "    <title>2021/2022 Holidays</title>\n";
     cout << "    <style>";
     cout << "    table, th, td {";
     cout << "      border: 1px solid black;";

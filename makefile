@@ -3,11 +3,11 @@ CFLAGS=-std=c++11 -g -Wall
 
 all: holidays
 
-weekday.o: weekday.cpp weekday.h
-	$(CC) $(CFLAGS) -c weekday.cpp
+dateutils.o: dateutils.cpp dateutils.h
+	$(CC) $(CFLAGS) -c dateutils.cpp
 
-holidays: holidays.cpp weekday.o
-	$(CC) $(CFLAGS) -o holidays weekday.o holidays.cpp
+holidays: holidays.cpp dateutils.o
+	$(CC) $(CFLAGS) -o holidays dateutils.o holidays.cpp
 
 clean:
-	rm *.o *.exe *.stackdump holidays weekday
+	rm *.o *.exe *.stackdump holidays dateutils

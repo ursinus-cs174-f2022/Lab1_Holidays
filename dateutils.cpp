@@ -1,12 +1,14 @@
 /**
  * To compute the weekday for a particular day in the 
  * Gregorian Calendar using Conway's Doomsday algorithm
+ * 
+ * Also to return a month string corresponding to a month number
  * @author ctralie, 2022
  */
 
 #include <string>
 #include <iostream>
-#include "weekday.h"
+#include "dateutils.h"
 using namespace std;
     
 const string WEEKDAY_STRINGS[7] =  {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};

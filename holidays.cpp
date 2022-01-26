@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include "weekday.h"
+#include "dateutils.h"
 
 #define NUM_HOLIDAYS 42
 
@@ -37,6 +37,8 @@ void printHTMLEnd() {
     cout << "</body>\n</html>";
 }
 
+// TODO (in dateutils.cpp and dateutils.h)
+// Create a method that takes in a month number and returns a string
 
 // TODO: Create a method that takes in an index and prints a string 
 // corresponding the HTML code for that row of the table
@@ -53,13 +55,13 @@ int main() {
     ///// YOU NEED TO OUTPUT EVERY ROW IN THE TABLE, INCLUDING THE DATE  ////// 
     ///// INSTEAD, YOU SHOULD CALL YOUR METHODS HERE                    ////
     cout << "<table>";
-    cout << "<tr><td>Our Lab</td><td>" << getWeekday(2022, 01, 26) << "</td></tr>\n";
+    cout << "<tr><td>Our Lab</td><td>" << getWeekday(2022, 01, 26) << "</td><td>January 26, 2022</td></tr>\n";
 
     int month = HOLIDAY_MONTHS[0];
     int day = HOLIDAY_DAYS[0];
     int year = HOLIDAY_YEARS[0];
     string weekday = getWeekday(year, month, day);
-    cout << "<tr><td>" << HOLIDAY_NAMES[0] << "</td><td>" << weekday << "</td></tr>\n";
+    cout << "<tr><td>" << HOLIDAY_NAMES[0] << "</td><td>" << weekday << "</td><td>September 6, 2021</td></tr>\n";
     //////////////////////////////////////////////////////////////////////////
 
     printHTMLEnd();

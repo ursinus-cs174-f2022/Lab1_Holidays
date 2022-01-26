@@ -37,7 +37,7 @@ void printHTMLEnd() {
     cout << "</body>\n</html>";
 }
 
-void print
+
 // TODO: Create a method that takes in an index and prints a string 
 // corresponding the HTML code for that row of the table
 

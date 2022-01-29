@@ -10,4 +10,4 @@ holidays: holidays.cpp dateutils.o
 	$(CC) $(CFLAGS) -o holidays dateutils.o holidays.cpp
 
 clean:
-	rm *.o *.exe *.stackdump holidays dateutils
+	rm *.o *.exe *.stackdump holidays dateutils.o
